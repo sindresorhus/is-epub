@@ -1,0 +1,22 @@
+{
+  "name": "is-epub",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is EPUB",
+  "license": "MIT",
+  "repo": "sindresorhus/is-epub",
+  "scripts": [
+    "index.js"
+  ],
+  "keywords": [
+    "epub",
+    "ebook",
+    "book",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "binary",
+    "buffer",
+    "uint8array"
+  ]
+}

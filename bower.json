@@ -1,0 +1,32 @@
+{
+  "name": "is-epub",
+  "description": "Check if a Buffer/Uint8Array is EPUB",
+  "license": "MIT",
+  "main": "browser.js",
+  "authors": [
+    {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "http://sindresorhus.com"
+    }
+  ],
+  "keywords": [
+    "epub",
+    "ebook",
+    "book",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "binary",
+    "buffer",
+    "uint8array"
+  ],
+  "ignore": [
+    ".*",
+    "test.js",
+    "component.json",
+    "package.json",
+    "fixture*"
+  ]
+}
