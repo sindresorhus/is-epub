@@ -27,7 +27,7 @@ $ component install sindresorhus/is-epub
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isEpub = require('is-epub');
-var buffer = readChunk('unicorn.epub', 0, 58);
+var buffer = readChunk.sync('unicorn.epub', 0, 58);
 
 isEpub(buffer);
 //=> true
