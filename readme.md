@@ -11,14 +11,6 @@ Used by [file-type](https://github.com/sindresorhus/file-type).
 $ npm install --save is-epub
 ```
 
-```sh
-$ bower install --save is-epub
-```
-
-```sh
-$ component install sindresorhus/is-epub
-```
-
 
 ## Usage
 
