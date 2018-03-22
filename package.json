@@ -1,37 +1,38 @@
 {
-  "name": "is-epub",
-  "version": "1.0.1",
-  "description": "Check if a Buffer/Uint8Array is EPUB",
-  "license": "MIT",
-  "repository": "sindresorhus/is-epub",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "epub",
-    "ebook",
-    "book",
-    "type",
-    "detect",
-    "check",
-    "is",
-    "binary",
-    "buffer",
-    "uint8array"
-  ],
-  "devDependencies": {
-    "mocha": "*",
-    "read-chunk": "^1.0.0"
-  }
+	"name": "is-epub",
+	"version": "1.0.1",
+	"description": "Check if a Buffer/Uint8Array is EPUB",
+	"license": "MIT",
+	"repository": "sindresorhus/is-epub",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "ava && xo"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"epub",
+		"ebook",
+		"book",
+		"type",
+		"detect",
+		"check",
+		"is",
+		"binary",
+		"buffer",
+		"uint8array"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"read-chunk": "^2.1.0",
+		"xo": "*"
+	}
 }

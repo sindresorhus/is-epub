@@ -1,14 +1,12 @@
 # is-epub [![Build Status](https://travis-ci.org/sindresorhus/is-epub.svg?branch=master)](https://travis-ci.org/sindresorhus/is-epub)
 
-> Check if a Buffer/Uint8Array is [EPUB](http://en.wikipedia.org/wiki/EPUB)
-
-Used by [file-type](https://github.com/sindresorhus/file-type).
+> Check if a Buffer/Uint8Array is [EPUB](https://en.wikipedia.org/wiki/EPUB)
 
 
 ## Install
 
-```sh
-$ npm install --save is-epub
+```
+$ npm install is-epub
 ```
 
 
@@ -17,9 +15,9 @@ $ npm install --save is-epub
 ##### Node.js
 
 ```js
-var readChunk = require('read-chunk'); // npm install read-chunk
-var isEpub = require('is-epub');
-var buffer = readChunk.sync('unicorn.epub', 0, 58);
+const readChunk = require('read-chunk');
+const isEpub = require('is-epub');
+const buffer = readChunk.sync('unicorn.epub', 0, 58);
 
 isEpub(buffer);
 //=> true
@@ -28,11 +26,11 @@ isEpub(buffer);
 ##### Browser
 
 ```js
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open('GET', 'unicorn.epub');
 xhr.responseType = 'arraybuffer';
 
-xhr.onload = function () {
+xhr.onload = () => {
 	isEpub(new Uint8Array(this.response));
 	//=> true
 };
@@ -50,6 +48,11 @@ Accepts a Buffer (Node.js) or Uint8Array.
 It only needs the first 58 bytes.
 
 
+## Related
+
+- [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
+
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
