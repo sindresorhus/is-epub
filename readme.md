@@ -1,4 +1,4 @@
-# is-epub [![Build Status](https://travis-ci.org/sindresorhus/is-epub.svg?branch=master)](https://travis-ci.org/sindresorhus/is-epub)
+# is-epub
 
 > Check if a Buffer/Uint8Array is [EPUB](https://en.wikipedia.org/wiki/EPUB)
 
