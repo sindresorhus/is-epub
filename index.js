@@ -1,5 +1,4 @@
-'use strict';
-module.exports = buffer => {
+export default function isEpub(buffer) {
 	if (!buffer || buffer.length < 58) {
 		return false;
 	}
@@ -9,4 +8,4 @@ module.exports = buffer => {
 		buffer[2] === 3 &&
 		buffer[3] === 4 &&
 		buffer.slice(30, 58).toString() === 'mimetypeapplication/epub+zip';
-};
+}
